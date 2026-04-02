@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UrgX" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#0D0D1F</item>
+        <item name="android:navigationBarColor">#0D0D1F</item>
+        <item name="android:windowBackground">#0D0D1F</item>
+    </style>
+    <style name="BottomNavText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

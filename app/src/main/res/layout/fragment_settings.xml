@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:background="#0D0D1C"
+            android:paddingTop="40dp"/>
+
+        <!-- Shake sensitivity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#0D0D1C"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shake sensitivity"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Higher = harder shake needed"
+                android:textColor="#555555"
+                android:textSize="11sp"
+                android:layout_marginBottom="12dp"/>
+
+            <SeekBar
+                android:id="@+id/seekSensitivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="2"
+                android:progressTint="#FF6B2B"
+                android:thumbTint="#FF6B2B"/>
+
+            <TextView
+                android:id="@+id/tvSensitivityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:textColor="#FF6B2B"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Arm timeout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#0D0D1C"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume press window"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvArmTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 seconds after shake to press volume"
+                android:textColor="#555555"
+                android:textSize="11sp"
+                android:layout_marginBottom="12dp"/>
+
+            <SeekBar
+                android:id="@+id/seekArmTimeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3"
+                android:progress="1"
+                android:progressTint="#FF6B2B"
+                android:thumbTint="#FF6B2B"/>
+
+            <TextView
+                android:id="@+id/tvArmTimeoutValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 seconds"
+                android:textColor="#FF6B2B"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Voice trigger toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            android:background="#0D0D1C"
+            android:layout_marginTop="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voice keyword trigger"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Say 'Help' to trigger SOS"
+                    android:textColor="#555555"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:thumbTint="#FF6B2B"
+                android:trackTint="#333333"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:backgroundTint="#FF6B2B"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

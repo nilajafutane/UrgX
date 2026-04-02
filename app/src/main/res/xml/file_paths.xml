@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-cache-path name="sos_audio" path="."/>
+    <files-path name="sos_files" path="."/>
+</paths>
